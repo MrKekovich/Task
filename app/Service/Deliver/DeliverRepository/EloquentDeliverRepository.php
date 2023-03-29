@@ -5,7 +5,7 @@ namespace App\Service\Deliver\DeliverRepository;
 use App\Models\Deliver;
 use Illuminate\Database\Eloquent\Collection;
 
-class EloquentDeliverRepository
+class EloquentDeliverRepository implements DeliverRepository
 {
     public function getByDate($date): Collection
     {

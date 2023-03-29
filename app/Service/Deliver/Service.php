@@ -11,9 +11,9 @@ use Carbon\Carbon;
 class Service
 {
     const START_DATE = '2021-01-13';
-    private EloquentDeliverRepository $deliverRepository;
+    private DeliverRepository $deliverRepository;
 
-    public function __construct(EloquentDeliverRepository $deliverRepository)
+    public function __construct(DeliverRepository $deliverRepository)
     {
         $this->deliverRepository = $deliverRepository;
     }
